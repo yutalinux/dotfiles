@@ -1,0 +1,5 @@
+set $term alacritty
+
+bar {
+    swaybar_command waybar
+}
