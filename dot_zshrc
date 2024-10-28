@@ -17,11 +17,11 @@ export EDITOR=vim
 PATH=$PATH:~/dev/scripts
 # . "$HOME/.cargo/env"
 
-ls ~/.vscode-server/bin | grep user | while read LINE
-do
-    FILE=`echo ${LINE} | awk '{print $9}'`
-    PATH=$PATH:/home/yuta/.vscode-server/bin/${FILE}/bin/remote-cli
-done
+# ls ~/.vscode-server/bin | grep user | while read LINE
+# do
+#     FILE=`echo ${LINE} | awk '{print $9}'`
+#     PATH=$PATH:/home/yuta/.vscode-server/bin/${FILE}/bin/remote-cli
+# done
 
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:/usr/local/go/bin:$PATH
 
