@@ -101,8 +101,11 @@ input * {
   xkb_layout "jp"
 }
 
-default_border none
-default_floating_border none
+default_border pixel 5
+default_floating_border pixel 5
+
+client.focused #856baf #ffffff00 #ffffff00
+client.unfocused #393c4c #ffffff00 #ffffff00
 
 gaps inner 5
 gaps outer 3

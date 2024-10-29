@@ -1,9 +1,34 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 30,
-    "spacing": 5,
-    "modules-left": ["sway/workspaces", "sway/mode"],
-    "modules-center": ["sway/window"],
-    "modules-right": ["cpu", "battery", "clock", "tray"]
+    "height": 50,
+    "spacing": 0,
+    "modules-left": [
+        "sway/workspaces"
+    ],
+    "modules-center": ["clock"],
+    "modules-right": [
+        "cpu", 
+        "temperature", 
+        "memory", 
+        "disk", 
+        "pulseaudio", 
+        "tray"
+    ],
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": false
+    },
+    "temperature": {
+        "format": " {temperatureC}°C"
+    },
+    "memory": {
+        "format": " {percentage}%"
+    },
+    "disk": {
+        "format": " {percentage_free}%"
+    },
+    "pulseaudio": {
+        "format": " {volume}%"
+    }
 }

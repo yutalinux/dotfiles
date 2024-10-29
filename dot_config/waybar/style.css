@@ -1,7 +1,97 @@
-@import url("./colors.css");
-/* example usage */
+* {
+  font-family: "Font Awesome 5 Free", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  opacity: 1;
+}
+
 window#waybar {
-background: @background;
-color: @purple;
-/* or cyan, green, orange, pink, red, yellow, foreground, background-darker etc. */
+  background-color: #282a36;
+  box-shadow: none;
+  border: none;
+  margin: 0 20px;
+}
+
+#workspaces button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0 10px;
+}
+
+#waybar .modules-right {
+  margin: 10px 10px;
+}
+
+#clock,
+#battery,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd,
+#language {
+  padding: 5px 10px;
+  background-color: transparent;
+}
+
+#cpu,
+#temperature {
+  margin: 0;
+  background-color: #bd93f9;
+  color: #000;
+}
+
+#cpu {
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+#temperature {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  padding-left: 5px;
+  padding-right: 15px;
+}
+
+#memory {
+  border-radius: 9999px;
+  background-color: #ffb86c;
+  color: black;
+  margin-left: 8px;
+}
+
+#disk {
+  border-radius: 9999px;
+  background-color: #bd93f9;
+  color: black;
+  margin-left: 8px;
+}
+
+#pulseaudio {
+  border-radius: 9999px;
+  background-color: #ffb86c;
+  color: black;
+  margin-left: 8px;
+}
+
+#tray {
+  padding: 5px 15px;
+  border-radius: 9999px;
+  background-color: #6272a4;
+  color: #000;
+  margin-left: 8px;
 }
