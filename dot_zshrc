@@ -42,4 +42,4 @@ esac
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-export PATH="$PATH:/dev/flutter/bin"
+export PATH="$PATH:/home/yuta/dev/flutter/bin"
