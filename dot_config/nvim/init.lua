@@ -47,15 +47,6 @@ cmp.setup({
   })
 })
 
-local autocmd = vim.api.nvim_create_autocmd
-autocmd("TermOpen", {
-  pattern = "*",
-  callback = function ()
-    vim.opt.number = false
-    vim.cmd ':startinsert'
-  end
-})
-
 vim.opt.shiftwidth = 2
 vim.opt.number = true
 vim.opt.mouse = ""
@@ -66,10 +57,20 @@ vim.g.mapleader = " "
 vim.cmd("colorscheme nordfox")
 
 local set = vim.keymap.set
+local autocmd = vim.api.nvim_create_autocmd
 
 set("n", "<C-n>", ":Neotree <CR>")
-set("n", "<C-w><C-t>C-t>", ":split + term <CR>")
+set('n', '<leader>t', ':belowright 15 split | terminal <CR>')
 set("n", "<Up>", "<Nop>")
 set("n", "<Donw>", "<Nop>")
 set("n", "<Left>", "<Nop>")
 set("n", "<Right>", "<Nop>")
+set('t', '<Esc>', [[<C-\><C-n>]])
+
+autocmd("TermOpen", {
+  callback = function()
+    vim.opt_local.number = false
+    vim.opt_local.relativenumber = false
+    vim.cmd('startinsert')
+  end
+})
