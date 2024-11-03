@@ -61,6 +61,8 @@ vim.opt.number = true
 vim.opt.mouse = ""
 vim.opt.encoding = "utf-8"
 vim.opt.title = true
+vim.g.mapleader = " "
+
 vim.cmd("colorscheme nordfox")
 
 local set = vim.keymap.set
