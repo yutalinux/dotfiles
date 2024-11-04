@@ -1,23 +1,6 @@
 require("config.lazy")
 
-require("ibl").setup()
-require("Comment").setup()
-require("neo-tree").setup({
-  filesystem = {
-    hijack_netrw_behavior = "open_default",
-    filtered_items = {
-      visible = true,
-    }
-  },
-})
-
 require("mason").setup()
-require("mason-lspconfig").setup()
-require("mason-lspconfig").setup_handlers {
-  function(server_name)
-    require("lspconfig")[server_name].setup {}
-  end,
-}
 
 capabilities = require("cmp_nvim_lsp").default_capabilities()
 
@@ -61,10 +44,6 @@ local autocmd = vim.api.nvim_create_autocmd
 
 set("n", "<C-n>", ":Neotree <CR>")
 set('n', '<leader>t', ':belowright 15 split | terminal <CR>')
-set("n", "<Up>", "<Nop>")
-set("n", "<Donw>", "<Nop>")
-set("n", "<Left>", "<Nop>")
-set("n", "<Right>", "<Nop>")
 set('t', '<Esc>', [[<C-\><C-n>]])
 
 autocmd("TermOpen", {
