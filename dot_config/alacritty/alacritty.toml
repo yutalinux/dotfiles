@@ -10,5 +10,5 @@ blur = true
 option_as_alt = "Both"
 
 [font]
-normal.family = "JetBrains Mono"
+normal.family = "Noto Sans"
 size = 12
