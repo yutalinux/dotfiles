@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S zsh tmux
+sudo pacman -S --needed zsh
