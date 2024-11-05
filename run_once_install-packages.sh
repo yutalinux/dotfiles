@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S --needed zsh neovim
+sudo pacman -S --needed zsh neovim lazygit
