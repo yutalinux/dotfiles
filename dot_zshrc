@@ -13,6 +13,7 @@ source $ZSH/oh-my-zsh.sh
 # Vars
 
 export EDITOR=nvim
+export GTK_THEME="Fluent-Dark"
 
 # Path
 
