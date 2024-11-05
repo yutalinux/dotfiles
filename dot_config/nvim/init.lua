@@ -16,7 +16,7 @@ local set = vim.keymap.set
 local autocmd = vim.api.nvim_create_autocmd
 
 set("n", "<C-n>", ":Neotree <CR>")
-set('n', '<leader>t', ':belowright 15 split | terminal <CR>')
+-- set('n', '<leader>t', ':belowright 15 split | terminal <CR>')
 set('t', '<Esc>', [[<C-\><C-n>]])
 set("n", "<C-h>", ":bprev<CR>")
 set("n", "<C-l>", ":bnext<CR>")
