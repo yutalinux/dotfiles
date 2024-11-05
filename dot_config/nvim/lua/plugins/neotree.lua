@@ -13,6 +13,9 @@ return {
         filtered_items = {
           visible = true,
         }
+      },
+      window = {
+	width = 40
       }
     })
   end
