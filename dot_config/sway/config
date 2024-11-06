@@ -5,7 +5,7 @@ set $down j
 set $up k
 set $right l
 
-set $term alacritty
+set $term wezterm
 set $menu wofi --show drun
 
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
@@ -104,15 +104,20 @@ input * {
 default_border pixel 5
 default_floating_border pixel 5
 
-client.focused #856baf #ffffff00 #ffffff00
-client.unfocused #393c4c #ffffff00 #ffffff00
+client.focused #ffffff00 #ffffff00 #ffffff00 #ffffff00
+corner_radius 10
+blur enable
+blur_passes 3
+blur_radius 2
+shadows enable
+shadow_blur_radius 25
 
 gaps inner 5
-gaps outer 3
+gaps outer 0
 
 bindsym $mod+r mode "resize"
 
-exec waybar
+# exec waybar
 
 exec fcitx5 -dr
 
@@ -121,6 +126,11 @@ exec_always ~/.bin/import-gsettings.sh \
               icon-theme:gtk-icon-theme-name \
               cursor-theme:gtk-cursor-theme-name
 
-output "*" background /usr/share/backgrounds/tsuki-linux.png fill
+output "*" background /usr/share/backgrounds/Vimix-night.png fill
+
+output HDMI1 pos 1920 0
+output HDMI1 pos 0 0 res 1920x1080
+output eDP1 pos 0 0
+output eDP1 pos 0 0 res 1920x1080
 
 include /etc/sway/config.d/*
