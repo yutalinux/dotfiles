@@ -1,8 +1,6 @@
-vim.g.mapleader = ","
-
 require("config.lazy")
 
-vim.cmd("colorscheme nordfox")
+vim.cmd.colorscheme "catppuccin"
 
 vim.opt.shiftwidth = 2
 vim.opt.number = true
@@ -12,7 +10,8 @@ vim.opt.termguicolors = true
 vim.opt.completeopt = "menu,menuone,noselect"
 vim.g.neovide_padding_top = 4
 vim.g.neovide_padding_bottom = 4
-vim.o.timeoutlen = 500
+vim.o.timeout = true
+vim.o.timeoutlen = 300
 
 local set = vim.keymap.set
 local autocmd = vim.api.nvim_create_autocmd
@@ -21,6 +20,7 @@ set("n", "<C-n>", ":Neotree <CR>")
 set('t', '<Esc>', [[<C-\><C-n>]])
 set("n", "<C-h>", ":bprev<CR>")
 set("n", "<C-l>", ":bnext<CR>")
+set('n', '<C-h>', function() vim.lsp.buf.format { async = true } end)
 
 autocmd("TermOpen", {
   callback = function()
