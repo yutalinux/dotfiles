@@ -30,14 +30,3 @@ autocmd("TermOpen", {
   end
 })
 
-vim.api.nvim_create_autocmd("InsertEnter", {
-  callback = function()
-    vim.o.timeoutlen = 0
-  end,
-})
-
-vim.api.nvim_create_autocmd("InsertLeave", {
-  callback = function()
-    vim.o.timeoutlen = 500
-  end,
-})
