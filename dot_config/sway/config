@@ -101,8 +101,8 @@ input * {
   xkb_layout "jp"
 }
 
-default_border pixel 5
-default_floating_border pixel 5
+default_border pixel 2
+default_floating_border pixel 2
 
 client.focused #ffffff00 #ffffff00 #ffffff00 #ffffff00
 corner_radius 10
@@ -113,7 +113,7 @@ shadows enable
 shadow_blur_radius 25
 
 gaps inner 5
-gaps outer 0
+gaps outer 3
 
 bindsym $mod+r mode "resize"
 

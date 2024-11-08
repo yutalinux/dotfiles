@@ -1,0 +1,6 @@
+{
+    "version": "2.0.1",
+    "autoload": {
+        "HID 04f3:0103": "\u30ad\u30fc\u30dc\u30fc\u30c9"
+    }
+}
