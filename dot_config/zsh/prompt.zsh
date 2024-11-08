@@ -1,1 +1,1 @@
-PROMPT='%F{green}%n@%m %F{cyan}%~%f %f%# '
+PROMPT='%F{green}%n %F{cyan}%~%f %f%# '
