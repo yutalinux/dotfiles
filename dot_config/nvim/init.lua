@@ -11,7 +11,8 @@ vim.opt.completeopt = "menu,menuone,noselect"
 vim.g.neovide_padding_top = 4
 vim.g.neovide_padding_bottom = 4
 vim.o.timeout = true
-vim.o.timeoutlen = 300
+vim.o.timeoutlen = 400
+vim.opt.laststatus = 3
 
 local set = vim.keymap.set
 local autocmd = vim.api.nvim_create_autocmd
