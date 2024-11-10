@@ -22,7 +22,7 @@ set("n", "<C-n>", ":Neotree <CR>")
 set('t', '<Esc>', [[<C-\><C-n>]])
 set("n", "<C-h>", ":bprev<CR>")
 set("n", "<C-l>", ":bnext<CR>")
--- set('n', '<C-h>', function() vim.lsp.buf.format { async = true } end)
+set('n', '<C-g>', function() vim.lsp.buf.format { async = true } end)
 
 autocmd("TermOpen", {
   callback = function()

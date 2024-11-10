@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S --needed 
+# sudo pacman -S --needed 
