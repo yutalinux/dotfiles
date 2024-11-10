@@ -1,6 +1,6 @@
 require("config.lazy")
 
-vim.cmd.colorscheme "catppuccin"
+require('onedark').load()
 
 vim.opt.shiftwidth = 2
 vim.opt.number = true
