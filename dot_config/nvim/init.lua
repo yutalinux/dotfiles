@@ -13,6 +13,7 @@ vim.g.neovide_padding_bottom = 4
 vim.o.timeout = true
 vim.o.timeoutlen = 400
 vim.opt.laststatus = 3
+vim.opt.tabstop = 2
 
 local set = vim.keymap.set
 local autocmd = vim.api.nvim_create_autocmd

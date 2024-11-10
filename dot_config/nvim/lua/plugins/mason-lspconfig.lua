@@ -7,7 +7,7 @@ return {
   },
   lazy = false,
   config = function ()
-    local lsp_servers = { "html", "cssls", "ts_ls", "jsonls", "lua_ls", "rust_analyzer" }
+    local lsp_servers = { "html", "cssls", "ts_ls", "jsonls", "lua_ls", "rust_analyzer", "astro" }
     local diagnostics = { "typos_lsp" }
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
 

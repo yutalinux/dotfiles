@@ -8,6 +8,7 @@ return {
     null_ls.setup({
       sources = {
 	null_ls.builtins.formatting.prettier,
+	null_ls.builtins.formatting.astro,
       },
       on_attach = function(client, bufnr)
         if client.supports_method("textDocument/formatting") then
