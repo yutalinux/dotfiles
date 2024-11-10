@@ -25,10 +25,9 @@ set("n", "<C-l>", ":bnext<CR>")
 set('n', '<C-g>', function() vim.lsp.buf.format { async = true } end)
 
 autocmd("TermOpen", {
-  callback = function()
-    vim.opt_local.number = false
-    vim.opt_local.relativenumber = false
-    vim.cmd('startinsert')
-  end
+	callback = function()
+		vim.opt_local.number = false
+		vim.opt_local.relativenumber = false
+		vim.cmd('startinsert')
+	end
 })
-

@@ -1,1 +1,1 @@
-return {'vim-test/vim-test'}
+return { 'vim-test/vim-test' }

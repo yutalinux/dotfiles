@@ -1,5 +1,5 @@
 return {
-  "declancm/cinnamon.nvim",
-  version = "*",
-  opts = {},
+	"declancm/cinnamon.nvim",
+	version = "*",
+	opts = {},
 }
