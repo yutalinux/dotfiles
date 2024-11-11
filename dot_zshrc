@@ -12,7 +12,6 @@ source "$HOME/.config/zsh/prompt.zsh"
 
 export LANG=ja_JP.UTF-8
 export EDITOR=nvim
-export GTK_THEME="Fluent-Dark"
 
 # Path
 
