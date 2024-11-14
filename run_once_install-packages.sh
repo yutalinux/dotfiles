@@ -3,9 +3,6 @@ install() {
   sudo pacman -S --needed $@
 }
 
-<<<<<<< Updated upstream
-# sudo pacman -S --needed 
-=======
 install base
 install base-devel
 install nodejs npm yarn pnpm
@@ -20,4 +17,3 @@ install fastfetch
 
 rustup toolchain install stable
 sudo chsh yuta -s /bin/zsh
->>>>>>> Stashed changes
