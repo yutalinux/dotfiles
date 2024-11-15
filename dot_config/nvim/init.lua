@@ -19,7 +19,7 @@ local set = vim.keymap.set
 local autocmd = vim.api.nvim_create_autocmd
 
 set("n", "<C-n>", ":Neotree <CR>")
-set('t', '<Esc>', [[<C-\><C-n>]])
+-- set('t', '<Esc>', [[<C-\><C-n>]])
 set("n", "<C-h>", ":bprev<CR>")
 set("n", "<C-l>", ":bnext<CR>")
 set('n', '<C-g>', function() vim.lsp.buf.format { async = true } end)
