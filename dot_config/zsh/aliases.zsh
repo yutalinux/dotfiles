@@ -13,6 +13,10 @@ alias cp="cp -i"
 
 alias cl="clear"
 
+# ls
+alias ll="ls -l"
+alias la="ls -la"
+
 # pacman
 alias pacman="sudo pacman"
 
