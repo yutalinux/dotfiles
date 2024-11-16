@@ -1,3 +1,1 @@
-return {
-	'navarasu/onedark.nvim'
-}
+return { "navarasu/onedark.nvim" }
