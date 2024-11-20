@@ -22,6 +22,10 @@ set("n", "<C-n>", ":Neotree <CR>")
 set("n", "<C-h>", ":bprev<CR>")
 set("n", "<C-l>", ":bnext<CR>")
 set('n', '<C-g>', function() vim.lsp.buf.format { async = true } end)
+set("i", "<C-j>", "<Plug>(skkeleton-enable)")
+
+vim.cmd("call skkeleton#initialize()")
+vim.cmd("call skkeleton#config({ 'globalDictionaries': [['~/.skk/SKK-JISYO.L', 'euc-jp']] })")
 
 autocmd("TermOpen", {
 	callback = function()
