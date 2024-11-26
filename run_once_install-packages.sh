@@ -1,19 +1,19 @@
 #!/bin/bash
 install() {
-  sudo pacman -S --needed $@
+	sudo pacman -S --needed --noconfirm $@
 }
 
-install base
-install base-devel
-install nodejs npm yarn pnpm
-install python
-install rustup
-install zsh zsh-completions zsh-syntax-highlighting zsh-autosuggestions
-install tmux
-install vim neovim
-install curl wget
-install git github-cli
-install fastfetch
+install base \
+	base-devel \
+	nodejs npm yarn pnpm \
+	python \
+	rustup \
+	zsh zsh-completions zsh-syntax-highlighting zsh-autosuggestions \
+	tmux \
+	vim neovim \
+	curl wget \
+	git github-cli \
+	fastfetch
 
 rustup toolchain install stable
 sudo chsh yuta -s /bin/zsh
